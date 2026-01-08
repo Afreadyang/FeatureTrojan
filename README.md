@@ -1,39 +1,28 @@
 
 ## Repository is still under construction; please wait a few more weeks.
 
-
-### FeatureTrojan
-
-### Baseline Backdoor Attacks
-
-See [poison_tool_box/](poison_tool_box/) and [create_poisoned_set.py](create_poisoned_set.py).
-
-- `none`, `badnet`, `blend`, `trojan`, `clean_label`, `SIG`, `dynamic`, `WaNet`, `TaCT`, `adaptive_patch`, `adaptive_blend`
-
-**LOTUS**
-
-See [LOTUS/](LOTUS/).
-
-
-
-### Backdoor Defenses
-
-See [cleansers_tool_box/](cleansers_tool_box/) and [cleanser.py](cleanser.py).
-
-- `SS`, `AC`, `Strip`, `SCAn`, `Frequency`, `SPECTRE`
-
-See [other_defenses_tool_box/](other_defenses_tool_box/) and [other_defense.py](other_defense.py).
-
-- `AC`, `CD`, `STRIP`, `ScaleUp`, `IBD-PSC`, `Frequency`, `BaDExpert`, `NC`, `SFT`, `IBAU`
-
-**BTI-DBF**
-
-See [BTIDBF/](BTIDBF).
-
-
 ## Dependency
 
 This repository was developed with PyTorch 1.12.1, and should be compatible with PyTorch of newer versions. To set up the required environment, first manually install PyTorch with CUDA, and then install other packages via `pip install -r requirement.txt`.
+
+
+### FeatureTrojan
+
+See [featuretrojan/](featuretrojan/)
+
+### Baseline Backdoor Attacks
+
+- See [poison_tool_box/](poison_tool_box/) and [create_poisoned_set.py](create_poisoned_set.py) (`none`, `badnet`, `blend`, `trojan`, `clean_label`, `SIG`, `dynamic`, `WaNet`, `TaCT`, `adaptive_patch`, `adaptive_blend`)
+
+- See [LOTUS/](LOTUS/) (`LOTUS`)
+
+### Backdoor Defenses
+
+- See [cleansers_tool_box/](cleansers_tool_box/) and [cleanser.py](cleanser.py) (`SS`, `AC`, `Strip`, `SCAn`, `Frequency`, `SPECTRE`)
+
+- See [other_defenses_tool_box/](other_defenses_tool_box/) and [other_defense.py](other_defense.py) (`AC`, `CD`, `STRIP`, `ScaleUp`, `IBD-PSC`, `Frequency`, `BaDExpert`, `NC`, `SFT`, `IBAU`)
+
+- See [BTIDBF/](BTIDBF) (`BTI-DBF`)
 
 
 ## TODO before You Start
