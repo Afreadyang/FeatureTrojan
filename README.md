@@ -26,7 +26,12 @@ See [featuretrojan/](featuretrojan/)
 
 - Datasets:
   * CIFAR10 dataset would be automatically downloaded. 
-  * ImageNette dataset should be manually downloaded. Then, you should set up the local path in [config.py](config.py).
+  * ImageNette dataset should be manually downloaded from https://github.com/fastai/imagenette. Then, you should modify the settings in [config.py](config.py).
+
+```bash
+xx
+```
+
 - Before any experiments, first initialize the clean reserved data and validation data using command `python create_clean_set.py -dataset=$DATASET -clean_budget $N`, where `$DATASET = cifar10, imagenette`, `$N = 2000` for `cifar10`, `$N = 800` for `imagenette`.
 - Before launching `clean_label` attack, run [data/cifar10/clean_label/setup.sh](data/cifar10/clean_label/setup.sh).
 - Before launching `dynamic` attack, download pretrained generators `all2one_cifar10_ckpt.pth.tar` to [models/](models/) from https://drive.google.com/file/d/1vG44QYPkJjlOvPs7GpCL2MU8iJfOi0ei/view?usp=sharing.
