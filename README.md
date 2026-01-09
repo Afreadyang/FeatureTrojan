@@ -24,7 +24,7 @@ See [featuretrojan/](featuretrojan/)
 
 ### Preparation Before Running
 
-- Datasets:
+- Datasets ([data/](data)):
   * CIFAR10 dataset would be automatically downloaded. 
   * ImageNette dataset should be manually downloaded from https://github.com/fastai/imagenette. Then, you should modify the settings in [config.py](config.py).
 
