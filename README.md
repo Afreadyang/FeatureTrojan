@@ -1,7 +1,7 @@
 
 ## Repository is still under construction; please wait a few more weeks.
 
-### FeatureTrojan
+## FeatureTrojan
 
 See [featuretrojan/](featuretrojan/)
 
