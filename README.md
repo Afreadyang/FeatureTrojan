@@ -5,7 +5,9 @@
 
 See [featuretrojan/](featuretrojan/)
 
-### Baseline Backdoor Attacks
+## Baselines 
+
+### Backdoor Attacks
 
 - See [poison_tool_box/](poison_tool_box/) and [create_poisoned_set.py](create_poisoned_set.py) (`none`, `badnet`, `blend`, `trojan`, `clean_label`, `SIG`, `dynamic`, `WaNet`, `TaCT`, `adaptive_patch`, `adaptive_blend`)
 
@@ -20,7 +22,7 @@ See [featuretrojan/](featuretrojan/)
 - See [BTIDBF/](BTIDBF) (`BTI-DBF`)
 
 
-## Before You Start
+### Preparation Before Running
 
 - Datasets:
   * CIFAR10 dataset would be automatically downloaded. 
@@ -32,7 +34,7 @@ See [featuretrojan/](featuretrojan/)
 - `Frequency` baseline defense is based on Tensorflow. If you would like to reproduce their results, please install Tensorflow (code is tested with Tensorflow 2.8.1 and should be compatible with newer versions) manually, after installing all the dependencies upon. We suggest you create and use a separate (conda) environment for it.
 
 
-## Quick Start
+### Quick Start
 
 For example, to launch and defend against the Adaptive-Blend attack:
 ```bash
