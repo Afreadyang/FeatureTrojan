@@ -1,11 +1,6 @@
 
 ## Repository is still under construction; please wait a few more weeks.
 
-## Dependency
-
-This repository was developed with PyTorch 1.12.1, and should be compatible with PyTorch of newer versions. To set up the required environment, first manually install PyTorch with CUDA, and then install other packages via `pip install -r requirement.txt`.
-
-
 ### FeatureTrojan
 
 See [featuretrojan/](featuretrojan/)
@@ -25,14 +20,14 @@ See [featuretrojan/](featuretrojan/)
 - See [BTIDBF/](BTIDBF) (`BTI-DBF`)
 
 
-## TODO before You Start
+## Before You Start
 
 - Datasets:
-  * Original CIFAR10 and GTSRB datasets would be automatically downloaded. 
-  * ImageNet should be manually downloaded from [Kaggle](https://www.kaggle.com/competitions/imagenet-object-localization-challenge/data) or other available sources. Then set up the local path to your ImageNet dataset via the `imagenet_dir` variable in [config.py](config.py).
-- Before any experiments, first initialize the clean reserved data and validation data using command `python create_clean_set.py -dataset=$DATASET -clean_budget $N`, where `$DATASET = cifar10, gtsrb, ember, imagenet`, `$N = 2000` for `cifar10, gtsrb`, `$N = 5000` for `imagenet`.
+  * CIFAR10 dataset would be automatically downloaded. 
+  * ImageNette dataset should be manually downloaded. Then, you should set up the local path in [config.py](config.py).
+- Before any experiments, first initialize the clean reserved data and validation data using command `python create_clean_set.py -dataset=$DATASET -clean_budget $N`, where `$DATASET = cifar10, imagenette`, `$N = 2000` for `cifar10`, `$N = 800` for `imagenette`.
 - Before launching `clean_label` attack, run [data/cifar10/clean_label/setup.sh](data/cifar10/clean_label/setup.sh).
-- Before launching `dynamic` attack, download pretrained generators `all2one_cifar10_ckpt.pth.tar` and `all2one_gtsrb_ckpt.pth.tar` to [models/](models/) from https://drive.google.com/file/d/1vG44QYPkJjlOvPs7GpCL2MU8iJfOi0ei/view?usp=sharing and https://drive.google.com/file/d/1x01TDPwvSyMlCMDFd8nG05bHeh1jlSyx/view?usp=sharing.
+- Before launching `dynamic` attack, download pretrained generators `all2one_cifar10_ckpt.pth.tar` to [models/](models/) from https://drive.google.com/file/d/1vG44QYPkJjlOvPs7GpCL2MU8iJfOi0ei/view?usp=sharing.
 - `SPECTRE` baseline defense is implemented in Julia. To compare our defense with `SPECTRE`, you must install Julia and install dependencies before running SPECTRE, see [cleansers_tool_box/spectre/README.md](cleansers_tool_box/spectre/README.md) for configuration details.
 - `Frequency` baseline defense is based on Tensorflow. If you would like to reproduce their results, please install Tensorflow (code is tested with Tensorflow 2.8.1 and should be compatible with newer versions) manually, after installing all the dependencies upon. We suggest you create and use a separate (conda) environment for it.
 
